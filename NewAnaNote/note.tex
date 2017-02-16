@@ -1,0 +1,120 @@
+\documentclass[10pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphics}
+\usepackage[singlelinecheck=off]{caption}
+\usepackage{subfig}
+\captionsetup[table]{aboveskip=0pt}
+%\captionsetup[table]{belowskip=10pt}
+\usepackage{authblk} % new
+
+\begin{document}
+\title{PHENIX Analysis Note: Identified Charged Hadron Spectra In Additional Centrality Classes in Run8 d+Au}
+%\author{R. Belmont, A. Sickles}
+\author[1]{R. Belmont}
+\author[2]{A. Sickles}
+\affil[1]{University of Michigan}
+\affil[2]{Brookhaven National Laboratory}
+\maketitle
+
+
+\begin{abstract}
+This short analysis note is a supplement to AN1018 in support of the $\left<p_T\right>$
+analysis.
+\end{abstract}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+
+\section{Introduction}
+
+Given the strong interest in possible signature of hydrodynamical flow in d+Au
+collisions at RHIC, $\left<p_T\right>$ as a function of centrality is an important
+measurement in support of these studies.  This analysis note does not discuss
+the specifics of $\left<p_T\right>$ analysis itself.  Rather, we simply extend
+the identified charged hadron analysis presented in AN1018 and published in PPG146
+to include more centrality bins.
+
+\section{Double interactions in the most central bins}
+
+As discussed in AN1087 and PPG160, the Run8 data, especially the later runs,
+have a very small amount of in-time pile up and a somewhat more significant
+amount of out-of-time pileup.  For the 0--20\% bin, the upper limit of
+contamination is 7.6\% and can likely be ignored.  For the 0--5\% bin,
+the upper limit is 13.5\%, which is large enough to justify a quantitative
+check on how the spectral shapes are modified.
+
+In this analysis, we compare the spectral shapes by taking the ratio of the
+raw, uncorrected spectra in high luminosity to low luminosity runs.  We divide
+the runs into four luminosity categories based on the BBCLL1(no vertex) rate.
+A simple, direct comparison between any two of the four categories is not
+always feasible.
+A comparison of uncorrected spectra between magnetic fields is an inept
+comparison due to the very large differences in acceptance.
+In Table~\ref{lumicat} we show the BBCLL1(no vertex) rate ranges and the
+event numbers for each luminosity category.
+
+\begin{table}[ht]
+\caption{Luminosity categories}
+\begin{tabular}{rrrr}
+\hline
+Luminosity category & BBCLL1(no vertex) rate & No. of $++$ field events & No. of $--$ field events  \\
+A &    0--50 kHz & 449,986,638 &           0 \\
+B &  50--100 kHz & 471,459,131 &  59,744,470 \\
+C & 100--200 kHz & 428,340,263 & 291,129,781 \\
+D &   $>$200 kHz &  27,399,373 & 118,645,423 \\
+\hline
+\end{tabular}
+\label{lumicat}
+\end{table}
+
+
+
+
+\section{Centrality categories}
+
+In every PHENIX d+Au analysis prior to PPG152, the centrality
+was divided into four categories plus MinBias.
+For Run8 the centrality definition and categorization
+is discussed in AN900.
+With PPG152 as an impetus, the possibility of additional
+centrality categories was explored and is documented
+in AN1087.
+In Table~\ref{Cent4}
+we present the Glauber values and bias factors for these categories.
+
+\begin{table}[ht]
+\caption{Standard and extended centrality categories}
+  \begin{tabular}{rrrrrr}
+    \hline\hline
+    %Centrality & $\langle N_{part,d} \rangle$ & $\langle N_{part,Au} \rangle$ & $\langle N_{part} \rangle$ & $\left<N_{coll}\right>$ & bias factor\\
+    Centrality & $\langle N_{part\rm{[d]}} \rangle$ & $\langle N_{part\rm{[Au]}} \rangle$ & $\langle N_{part} \rangle$ & $\left<N_{coll}\right>$ & bias factor\\
+    \hline
+    0--100\% & 1.61 $\pm$ 0.01 &  6.84 $\pm$ 0.39 &  8.46 $\pm$ 0.39 &  7.590 $\pm$ 0.427 & 0.889 $\pm$ 0.001\\
+    \hline
+     0--20\% & 1.95 $\pm$ 0.01 & 13.33 $\pm$ 0.82 & 15.28 $\pm$ 0.83 & 15.061 $\pm$ 1.013 & 0.941 $\pm$ 0.010 \\
+    20--40\% & 1.84 $\pm$ 0.01 &  9.27 $\pm$ 0.63 & 11.11 $\pm$ 0.63 & 10.248 $\pm$ 0.704 & 1.000 $\pm$ 0.006 \\
+    40--60\% & 1.65 $\pm$ 0.02 &  6.15 $\pm$ 0.43 &  7.80 $\pm$ 0.44 &  6.579 $\pm$ 0.433 & 1.034 $\pm$ 0.017 \\
+    60--88\% & 1.36 $\pm$ 0.02 &  2.96 $\pm$ 0.18 &  4.32 $\pm$ 0.19 &  3.198 $\pm$ 0.193 & 1.031 $\pm$ 0.055 \\
+    \hline
+      0--5\% & 1.97 $\pm$ 0.02 &  15.82 $\pm$ 1.17 &  17.79 $\pm$ 1.18 &  18.115 $\pm$ 1.180 & 0.907 $\pm$ 0.010 \\
+     5--10\% & 1.96 $\pm$ 0.02 &  13.62 $\pm$ 0.96 &  15.58 $\pm$ 0.97 &  15.501 $\pm$ 1.049 & 0.940 $\pm$ 0.007 \\
+    10--20\% & 1.92 $\pm$ 0.02 &  12.16 $\pm$ 0.86 &  14.07 $\pm$ 0.86 &  13.397 $\pm$ 0.920 & 0.966 $\pm$ 0.008 \\
+    20--30\% & 1.88 $\pm$ 0.03 &  10.04 $\pm$ 0.66 &  11.92 $\pm$ 0.67 &  11.264 $\pm$ 0.764 & 0.991 $\pm$ 0.011 \\
+    30--40\% & 1.83 $\pm$ 0.04 &   8.68 $\pm$ 0.58 &  10.50 $\pm$ 0.60 &   9.348 $\pm$ 0.628 & 1.011 $\pm$ 0.015 \\
+    40--50\% & 1.70 $\pm$ 0.03 &   6.99 $\pm$ 0.48 &   8.69 $\pm$ 0.49 &   7.528 $\pm$ 0.495 & 1.030 $\pm$ 0.021 \\
+    50--60\% & 1.62 $\pm$ 0.03 &   5.53 $\pm$ 0.41 &   7.15 $\pm$ 0.43 &   5.779 $\pm$ 0.367 & 1.050 $\pm$ 0.033 \\
+    60--70\% & 1.55 $\pm$ 0.03 &   4.15 $\pm$ 0.33 &   5.70 $\pm$ 0.37 &   4.257 $\pm$ 0.266 & 1.073 $\pm$ 0.055 \\
+    70--88\% & 1.30 $\pm$ 0.03 &   2.62 $\pm$ 0.29 &   3.92 $\pm$ 0.31 &   2.638 $\pm$ 0.170 & 1.084 $\pm$ 0.108 \\
+    \hline\hline
+  \end{tabular}
+  \label{Cent4}
+\end{table}
+
+
+
+
+\end{document}
