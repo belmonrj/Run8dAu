@@ -1,0 +1,1 @@
+scp out.root belmonrj@rftpexp.rhic.bnl.gov:/phenix/u/workarea/belmonrj/TimingRun8/

@@ -1,0 +1,1 @@
+scp belmonrj@rftpexp.rhic.bnl.gov:/phenix/u/workarea/belmonrj/TimingRun8/outsum.root .
